@@ -1,0 +1,535 @@
+@font-face {
+   font-family: "Gotham Pro Light";
+   src: url("../fonts/GothamPro-Light.woff") format("woff");
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "Gotham Pro Medium";
+   src: url("../fonts/GothamPro-Medium.woff") format("woff");
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Gotham Pro";
+   src: url("../fonts/GothamPro.woff") format("woff");
+   font-weight: normal;
+   font-style: normal;
+}
+*,
+*::after,
+*::before {
+   box-sizing: border-box;
+}
+
+body {
+   background-color: #292929;
+   color: #fff;
+   font-family: "Gotham Pro", sans-serif;
+   margin: 0;
+}
+header {
+   padding-top: 50px;
+   margin-bottom: 100px;
+}
+
+.header-description {
+   font-family: "Gotham Pro Light";
+   letter-spacing: 0.12px;
+   font-size: 12px;
+}
+
+.text-color-red {
+   color: #ff3469;
+   font-family: "Gotham Pro Medium";
+}
+.header-contacts {
+   text-align: right;
+}
+.header-phone {
+   color: #fff;
+   text-decoration: none;
+   font-size: 20px;
+   font-weight: 500;
+   display: block;
+}
+.header-info {
+   font-size: 12px;
+   font-weight: 400;
+   margin-top: 7px;
+   display: block;
+}
+.callback {
+   color: #ff3469;
+   display: block;
+   margin-top: 16px;
+   font-size: 16px;
+}
+.hero {
+   text-align: center;
+   border-bottom: 1px solid #4c4c4c;
+   padding-bottom: 100px;
+}
+.hero-title {
+   font-size: 34px;
+   margin: auto;
+   margin-bottom: 34px;
+   text-transform: uppercase;
+   font-family: "Gotham Pro Medium";
+   line-height: normal;
+   letter-spacing: 0.34px;
+   max-width: 650px;
+}
+.hero-description {
+   font-size: 18px;
+   text-transform: uppercase;
+   font-family: "Gotham Pro Light";
+   line-height: normal;
+   letter-spacing: 0.18px;
+   font-weight: 300;
+   margin: auto;
+   margin-bottom: 90px;
+   max-width: 590px;
+}
+.hero-description > span {
+   font-weight: 500;
+   font-family: "Gotham Pro";
+}
+.flowers-sloder {
+   width: 100%;
+   text-align: center;
+   margin-bottom: 80px;
+}
+:root {
+   --swiper-theme-color: #af3e39;
+   --swiper-navigation-size: 30px;
+}
+.button {
+   margin-top: 35px;
+   font-size: 18px;
+   text-transform: uppercase;
+   color: #fff;
+   text-decoration: none;
+   padding: 30px 65px 26px;
+   background-color: #ff2e55;
+   letter-spacing: normal;
+   font-family: "Gotham Pro Medium";
+   display: inline-block;
+   cursor: pointer;
+   border: none;
+}
+
+.reviews {
+   padding-top: 100px;
+   padding-bottom: 50px;
+}
+.reviews-sloder {
+   margin-top: 98px;
+}
+.review-slide {
+   padding-left: 60px;
+   padding-right: 60px;
+}
+.review-image {
+   width: 220px;
+   height: 220px;
+   flex-shrink: 0;
+   border-radius: 50%;
+   overflow: hidden;
+   font-size: 20px;
+   font-family: "Gotham Pro Light";
+   position: relative;
+   margin-right: 50px;
+}
+.review-image:before {
+   content: "";
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   position: absolute;
+}
+.review-image > * {
+   position: relative;
+}
+.review-name {
+   margin-bottom: 7px;
+}
+.review-image-1 {
+   background: #000 url(../img/flower.jpg);
+   background-position: 50% 50%;
+}
+.review-image-2 {
+   background: #000 url(../img/flower2.jpg);
+   background-position: 50% 50%;
+   background-size: 110% 110%;
+   background-repeat: no-repeat;
+}
+.review-text {
+   font-size: 18px;
+   letter-spacing: 0.18px;
+   line-height: 1.4;
+}
+.review-link {
+   color: #f24841;
+}
+.section-title {
+   font-size: 30px;
+   text-transform: uppercase;
+   text-align: center;
+   letter-spacing: 0.3px;
+}
+.advantages {
+   text-align: center;
+   padding-bottom: 100px;
+   padding-top: 50px;
+   border-bottom: 1px solid #4c4c4c;
+}
+.adv-wrapper {
+   min-height: 85px;
+   margin-bottom: 30px;
+}
+.advanteges-title {
+   font-size: 20px;
+   text-transform: uppercase;
+   letter-spacing: 0.5px;
+   line-height: 1.4;
+   max-width: 270px;
+   margin: auto;
+}
+.goods {
+   padding-top: 100px;
+   padding-bottom: 100px;
+}
+.section-description {
+   text-align: center;
+   font-size: 18px;
+   text-transform: uppercase;
+}
+.card {
+   text-align: center;
+   border: 3px solid #fff;
+   padding: 33px 35px 30px 35px;
+   margin-top: 27px;
+}
+.card-title {
+   text-transform: uppercase;
+   margin-top: 23px;
+   margin-bottom: 20px;
+}
+.card-label {
+   font-size: 14px;
+   display: block;
+   margin-bottom: 14px;
+   margin-top: 20px;
+}
+.color-label {
+   width: 20px;
+   height: 20px;
+   cursor: pointer;
+}
+.color-input {
+   opacity: 0;
+   visibility: hidden;
+   position: absolute;
+   z-index: -9;
+}
+.color-label.white {
+   background-color: #fff;
+}
+.color-label.biege {
+   background-color: #f7b496;
+}
+.color-label.pink {
+   background-color: #ed366e;
+}
+.color-label.red {
+   background-color: #ff0000;
+}
+.color-label.blue {
+   background-color: #12129d;
+}
+.counter-input {
+   border: 2px solid #fff;
+   width: 40px;
+   height: 40px;
+   text-align: center;
+   color: #fff;
+   background-color: #292929;
+   margin-left: 15px;
+   margin-right: 15px;
+}
+.counter-button {
+   width: 40px;
+   height: 40px;
+   cursor: pointer;
+   font-size: 16px;
+   color: #fff;
+   background-color: #292929;
+   border: none;
+}
+.card-button {
+   font-size: 14px;
+   width: 100%;
+   padding-top: 16px;
+   padding-bottom: 13px;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+.more {
+   font-size: 14px;
+   color: #f24841;
+   display: block;
+   text-align: center;
+   margin-top: 39px;
+   padding: 10px;
+}
+.more:after {
+   content: "";
+   display: inline-block;
+   width: 10px;
+   height: 4px;
+   background: url("../img/caret.png") no-repeat center;
+   margin-left: 14px;
+   vertical-align: middle;
+}
+.offer {
+   padding-top: 100px;
+   padding-bottom: 100px;
+   background-color: #1a1a1a;
+   text-align: center;
+}
+.offer-link {
+   text-transform: uppercase;
+   color: #fff;
+   display: block;
+   font-size: 30px;
+   margin-bottom: 65px;
+}
+.offer-label {
+   display: block;
+   margin-bottom: 22px;
+   font-size: 14px;
+}
+.offer-phone {
+   font-size: 36px;
+   text-decoration: none;
+   color: #fff;
+}
+.footer-menu {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+.footer-menu-link {
+   text-transform: uppercase;
+   color: #fff;
+   font-size: 18px;
+}
+.footer-menu-item {
+   margin-right: 30px;
+   margin-bottom: 33px;
+}
+.social {
+   font-size: 16px;
+}
+.footer-label {
+   display: block;
+   font-size: 14px;
+   margin-bottom: 12px;
+}
+.footer-info {
+   text-align: right;
+}
+.footer-phone {
+   text-decoration: none;
+   color: #fff;
+   font-size: 24px;
+   display: block;
+   margin-bottom: 12px;
+}
+
+.bottom {
+   padding-top: 50px;
+   padding-bottom: 50px;
+   background-color: #fff;
+}
+.bottom-description {
+   color: #000;
+   font-family: "Gotham Pro Light";
+   letter-spacing: 0.12px;
+   font-size: 12px;
+}
+.about {
+   color: #000;
+   font-family: "Gotham Pro Light";
+   font-size: 12px;
+   text-align: right;
+}
+.about-link {
+   color: #000;
+   font-size: 12px;
+   text-align: right;
+}
+.bottom-about {
+   padding-top: 20px;
+}
+.modal {
+   display: none;
+   color: #000;
+}
+.modal-input {
+   display: block;
+   width: 100%;
+   padding: 10px;
+}
+.modal-button {
+   width: 100%;
+}
+@media (max-width: 768px) {
+   .header {
+      padding-top: 30px;
+      text-align: center;
+      margin-bottom: 65px;
+   }
+   .header-contacts {
+      text-align: center;
+      margin-top: 10px;
+   }
+   .header-logo {
+      margin-bottom: 10px;
+   }
+   .callback {
+      margin-top: 5px;
+   }
+   .hero {
+      padding-bottom: 50px;
+   }
+   .hero-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+      line-height: 1.5;
+   }
+   .hero-description {
+      font-size: 14px;
+      margin-bottom: 40px;
+      max-width: 450px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.5;
+   }
+   .flowers-sloder {
+      margin-bottom: 30px;
+   }
+   .button {
+      margin-top: 20px;
+      font-size: 14px;
+      padding: 20px 45px 15px;
+   }
+   .reviews {
+      padding-top: 40px;
+      padding-bottom: 30px;
+   }
+   .section-title {
+      font-size: 24px;
+      max-width: 350px;
+      margin: 0 auto;
+      margin-bottom: 14px;
+      line-height: 1.5;
+   }
+   .reviews-sloder {
+      margin-top: 40px;
+   }
+   .review-slide {
+      padding-left: 20px;
+      padding-right: 20px;
+      width: 575px;
+   }
+   .review-image {
+      width: 160px;
+      height: 160px;
+      font-size: 14px;
+      margin-right: 15px;
+   }
+   .review-text {
+      font-size: 12px;
+   }
+   .review-name {
+      margin-bottom: 0;
+   }
+   .swiper-slide {
+      max-width: 575px;
+   }
+   .container {
+      max-width: 575px;
+   }
+   :root {
+      --swiper-navigation-size: 20px;
+   }
+   .swiper-wrapper {
+      transform: translate3d(-1666px, 0px, 0px);
+   }
+   .swiper-button-prev {
+      left: 0;
+   }
+   .swiper-button-next {
+      right: 0;
+   }
+   .advantages {
+      padding-bottom: 30px;
+      padding-top: 25px;
+   }
+   .adv-wrapper {
+      margin-bottom: 0;
+   }
+   .adv-wrapper img {
+      height: 60px;
+   }
+   .advanteges-title {
+      font-size: 12px;
+   }
+   .goods {
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+   .section-description {
+      font-size: 14px;
+      max-width: 350px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+   }
+   .card {
+      margin-top: 10px;
+   }
+   .card-label {
+      margin: 20px auto;
+      display: block;
+   }
+   .colors {
+      max-width: 200px;
+      margin: auto;
+   }
+   .offer {
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+   .offer-link {
+      font-size: 18px;
+      margin-bottom: 20px;
+   }
+   .offer-phone {
+      font-size: 28px;
+   }
+   .py-5 {
+      padding-top: 2rem !important;
+      padding-bottom: 2rem !important;
+      text-align: left;
+   }
+   .footer-info {
+      text-align: left;
+   }
+   .social {
+      margin-bottom: 25px;
+   }
+}
